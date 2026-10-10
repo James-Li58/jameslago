@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>插畫作品｜積木作品集</title>
+<meta name="description" content="我自己的插畫作品集（選用頁面）。">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     這是「選用」的插畫頁面，預設不在網站選單裡。
+     想啟用插畫區，請做三件事：
+       1. 把這個檔案複製到網站最上層（與 index.html 同一個資料夾）
+       2. 把 data.js 裡的 ART_WORKS 換成你的插畫資料
+          （格式與 assets/js/works.js 的 LEGO_WORKS 完全相同）
+       3. 在每個頁面的 <nav class="site-nav"> 裡加回
+          <a href="art.html">插畫作品</a>
+     ============================================================ -->
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span data-site-name>積木作品集</span>
+    </a>
+    <nav class="site-nav">
+      <a href="../index.html">首頁</a>
+      <a href="../lego.html">樂高作品</a>
+      <a href="art.html">插畫作品</a>
+      <a href="../about.html">關於我</a>
+      <a href="../contact.html">聯絡我</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Illustrations</span>
+      <h1>插畫作品</h1>
+      <p>這一區放的是我自己畫的圖。啟用後會與樂高作品使用完全相同的卡片牆、分類篩選與燈箱。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="notice">
+        <span class="ico">✎</span>
+        <span><strong>目前尚未啟用：</strong>插畫資料清單（<code>ART_WORKS</code>）是空的，所以這裡不會顯示作品。填入資料後即可使用。</span>
+      </div>
+
+      <div class="filters" id="art-filters"></div>
+      <div class="grid" id="art-grid"></div>
+
+      <div class="panel" style="margin-top:44px">
+        <h3>插畫通常發佈在這些平台</h3>
+        <p class="muted" style="margin-bottom:16px">過程圖與草稿大多放在 Instagram 與 Threads，完整的繪製影片會放上 YouTube。</p>
+        <div class="social-grid" id="social-grid"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span data-site-name>積木作品集</span></div>
+        <p class="muted" style="margin-top:14px;max-width:440px" data-intro></p>
+      </div>
+      <div>
+        <h3 style="color:#fff;font-size:1rem">快速前往</h3>
+        <p class="muted" style="line-height:2.1">
+          <a href="../lego.html">樂高作品</a> ・ <a href="../about.html">關於我</a><br>
+          <a href="../contact.html">聯絡我</a>
+        </p>
+        <div class="social-mini" data-social-mini></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> <span data-author>YOUR_NAME</span> ・ 本站作品照片與內容版權所有</span>
+      <span>本站為個人作品展示網站，與 LEGO® 官方無關</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/works.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
