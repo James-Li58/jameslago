@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>積木作品集｜我的樂高創作</title>
+<meta name="description" content="我的樂高創作線上作品集，同步發佈於 YouTube、Instagram、TikTok、Threads 與 Facebook。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span data-site-name>積木作品集</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">首頁</a>
+      <a href="lego.html">樂高作品</a>
+      <a href="about.html">關於我</a>
+      <a href="contact.html">聯絡我</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 主視覺 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <span class="badge">LEGO CREATIONS ・ SINCE 20XX</span>
+      <h1><span data-site-name>積木作品集</span><br>把<span class="hl">零件</span>堆成自己的世界</h1>
+      <p class="lead" data-intro></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="lego.html">看全部作品 →</a>
+        <a class="btn btn-ghost" href="about.html">關於我</a>
+      </div>
+      <div class="social-mini" data-social-mini style="margin-top:26px"></div>
+      <div class="hero-stats">
+        <div>
+          <div class="num" id="stat-lego">0</div>
+          <div class="lbl">件作品</div>
+        </div>
+        <div>
+          <div class="num" id="stat-photos">0</div>
+          <div class="lbl">張作品照片</div>
+        </div>
+        <div>
+          <div class="num" id="stat-cats">0</div>
+          <div class="lbl">個作品分類</div>
+        </div>
+        <div>
+          <div class="num" id="stat-platforms">5</div>
+          <div class="lbl">個平台同步發佈</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精選作品 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Featured</span>
+        <h2>精選作品</h2>
+        <p>點卡片可以看大圖、完整說明，以及這件作品在各個平台的貼文連結。照片較多的作品，燈箱裡會有縮圖可以切換。</p>
+      </div>
+      <div class="grid cols-3" id="lego-featured"></div>
+      <div style="margin-top:28px">
+        <a class="btn btn-dark" href="lego.html">瀏覽全部作品 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社群 -->
+  <section class="section tight" style="background:#F4F1E9">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Follow Along</span>
+        <h2>在這些平台追蹤我</h2>
+        <p>新作品完成後會依序發佈在以下五個平台：YouTube 是完整組裝影片，Instagram 與 Facebook 以照片與貼文為主，TikTok 是短影音縮時，Threads 則是隨手記錄的想法。</p>
+      </div>
+      <div class="social-grid" id="social-grid"></div>
+    </div>
+  </section>
+
+  <!-- 更新作品的方法 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How to Update</span>
+        <h2>怎麼把新作品放上來</h2>
+        <p>這個網站不需要資料庫，作品清單是由你的照片資料夾自動產生的。</p>
+      </div>
+      <div class="split">
+        <div>
+          <ol class="steps">
+            <li><strong>把照片丟進 <code>images</code> 資料夾。</strong>在 D 槽的「Lego作品」資料夾上按右鍵複製，然後貼到網站資料夾裡的 <code>images</code> 裡面就好。一個作品一個子資料夾，資料夾名稱就是作品名稱。</li>
+            <li><strong>雙擊 <code>build-works.bat</code>。</strong>它會自動掃描 <code>images</code> 裡的所有照片，重新產生作品清單，分類也會依資料夾結構自動分好。</li>
+            <li><strong>重新整理瀏覽器。</strong>新作品就會出現在網站上，完成。</li>
+          </ol>
+          <p class="muted">檔名建議用 <code>01-封面.jpg</code>、<code>02-側面.jpg</code> 這樣的開頭數字，數字最小的那張會當作封面圖。</p>
+        </div>
+        <aside>
+          <div class="panel">
+            <h3>作品資料夾長這樣</h3>
+            <pre class="tree">images/
+├─ 城市天際線/
+│   ├─ 01-封面.jpg
+│   ├─ 02-側面.jpg
+│   └─ 03-細節.jpg
+├─ 復古咖啡車/
+│   └─ 01-封面.jpg
+└─ 積木恐龍/
+    ├─ 01-封面.jpg
+    └─ 02-背面.jpg</pre>
+            <p class="muted" style="margin:14px 0 0">資料夾名稱 = 作品名稱，分類可以另外在 <code>works.js</code> 調整。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span data-site-name>積木作品集</span></div>
+        <p class="muted" style="margin-top:14px;max-width:440px" data-intro></p>
+      </div>
+      <div>
+        <h3 style="color:#fff;font-size:1rem">快速前往</h3>
+        <p class="muted" style="line-height:2.1">
+          <a href="lego.html">樂高作品</a> ・ <a href="about.html">關於我</a><br>
+          <a href="contact.html">聯絡我</a>
+        </p>
+        <div class="social-mini" data-social-mini></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> <span data-author>YOUR_NAME</span> ・ 本站作品照片與內容版權所有</span>
+      <span>本站為個人作品展示網站，與 LEGO® 官方無關</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/works.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
